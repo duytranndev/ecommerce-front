@@ -1,0 +1,69 @@
+.manage-orders {
+}
+.manage-orders_table {
+    width: 100%;
+}
+.manage-orders_table thead {
+    border-bottom: 3px solid #ececec;
+    display: block;
+    padding: 4px 0;
+}
+.manage-orders_row {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+}
+.manage-orders_table tbody {
+    display: block;
+    height: 240px;
+    overflow: auto;
+}
+.manage-orders_row.tr-in-tbody {
+    padding: 10px 0;
+    border-bottom: 1px solid #ececec;
+    display: flex;
+    align-items: center;
+}
+.manage-orders_th {
+    color: #7d7d7d;
+    width: 20%;
+}
+.manage-orders_td {
+    color: black;
+    width: 20%;
+}
+.text-center {
+    text-align: center;
+}
+.btn_view-detail {
+    display: inline-block;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 6px 20px;
+    border: none;
+    border-radius: 2px;
+    font-weight: 500;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: #446084;
+    transition: all ease-in 0.2s;
+}
+.manage-orders_td.limit {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.btn_view-detail:hover {
+    box-shadow: inset 0 0 0 100px rgb(0 0 0 / 20%);
+    color: #fff;
+}
+.btn_view-detail.adjust {
+    margin-right: -32px;
+}
+.manage-orders_label {
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+}

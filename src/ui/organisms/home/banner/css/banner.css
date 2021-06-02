@@ -1,0 +1,38 @@
+.banner {
+  width: 100%;
+  height: 450px;
+  margin-top: 00px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1;
+}
+
+.banner .banner1 {
+  width: 100%;
+  height: 100%;
+}
+
+.banner .banner1 .layer {
+  background-image: url(https://thucphamplaza.com/tpplaza_content/uploads/products_img/BANNERTET2021rs.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.banner .banner2 {
+  width: 50%;
+  height: 100%;
+}
+
+.banner .banner2 iframe {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+  background-attachment: fixed;
+}
+/*# sourceMappingURL=banner.css.map */

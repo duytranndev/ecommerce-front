@@ -1,0 +1,76 @@
+/* .account_page {
+}
+.account {
+} */
+.account_header {
+    padding: 8px 0;
+    background-color: #f7f7f7;
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+}
+.account_header_wrap {
+    padding: 0 150px;
+}
+.account_heading {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+.account_label {
+    margin-left: 2px;
+}
+.account_content {
+    padding: 30px 150px;
+    display: flex;
+}
+.account_control {
+    border-right: 1px solid #ececec;
+    max-width: 25%;
+    flex-basis: 25%;
+}
+/* .account_user {
+} */
+.account_user_img {
+    border-radius: 50%;
+}
+.account_user_name {
+    margin-left: 12px;
+    font-size: 16px;
+}
+.account_list_menu {
+    padding: 16px 0;
+    list-style: none;
+    margin-bottom: 0;
+}
+.account_list_item {
+    padding: 6px 0;
+    border-bottom: 1px solid #ececec;
+    border-radius: 2px;
+}
+.account_list_item:hover {
+    border-right: 3px solid #446084;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.account_list_item.active {
+    border-right: 3px solid #446084;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+/* .account_list_item.active .account_list_link {
+    color: #000;
+} */
+.account_list_link {
+    color: rgb(94, 92, 92);
+    font-weight: 600;
+    margin-left: 2px;
+    display: block;
+}
+.account_list_link:hover {
+    color: #000;
+}
+.detail-manage {
+    padding: 0 20px;
+    flex: 1;
+}
+.detail-manage_label {
+    font-size: 16px;
+}

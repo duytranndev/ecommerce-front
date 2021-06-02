@@ -1,0 +1,104 @@
+.order-detail h2 {
+  font-weight: 700;
+  font-size: 1.6em;
+  line-height: 1.3;
+  color: #555;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+.order-table thead th {
+  line-height: 1.05;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-width: 3px;
+}
+
+.order-table th {
+  color: #777;
+}
+
+.order-table th:first-child,
+td:first-child {
+  padding-left: 0;
+}
+
+.order-table th:last-child,
+td:last-child {
+  padding-right: 0;
+}
+
+.order-table th,
+.order-table td {
+  padding: 0.5em;
+  text-align: left;
+  border-bottom: 1px solid #ececec;
+  line-height: 1.3;
+  font-size: 0.9em;
+}
+
+td.product-name {
+  word-break: break-word;
+  padding: 0.5em;
+  text-align: left;
+}
+
+.order-table tbody td,
+.order-table tfoot td {
+  padding-top: 0.5em;
+  text-align: left;
+}
+
+span.amount bdi {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.col-inner {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+.entry-content {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.02);
+  box-shadow: 1px 1px 3px 0px rgb(0 0 0 / 20%), 0 1px 0 rgb(0 0 0 / 7%), inset 0 0 0 1px rgb(0 0 0 / 5%);
+}
+
+.order-succesful-receive strong {
+  color: #7a9c59;
+  font-weight: bold;
+}
+
+.order-succesful-receive,
+.succesful-order-detail {
+  margin-bottom: 1.3em;
+  list-style: initial;
+}
+
+.succesful-order-detail li {
+  margin-left: 1.3em;
+  margin-bottom: 0.6em;
+}
+
+.succesful-order-detail li strong {
+  color: #777;
+}
+
+.not-active {
+  pointer-events: none;
+  cursor: default;
+}
+.product-total.text-right {
+  text-align: right;
+}

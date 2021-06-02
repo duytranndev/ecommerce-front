@@ -1,0 +1,72 @@
+/* Cart animation -----> */
+
+span+.image-icon {
+    margin-left: 10px;
+}
+
+.cart-icon {
+    display: inline-block
+}
+
+.cart-icon strong {
+    border-radius: 0;
+    font-weight: bold;
+    margin: .3em 0;
+    border: 2px solid #446084;
+    color: #446084;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    width: 2.2em;
+    height: 2.2em;
+    font-size: 1em;
+    line-height: 1.9em;
+    font-family: Helvetica, Arial, Sans-serif;
+}
+
+.cart-icon strong:after {
+    transition: height .1s ease-out;
+    bottom: 100%;
+    margin-bottom: 0;
+    margin-left: -7px;
+    height: 8px;
+    width: 14px;
+    left: 50%;
+    content: ' ';
+    position: absolute;
+    pointer-events: none;
+    border: 2px solid #446084;
+    border-top-left-radius: 99px;
+    border-top-right-radius: 99px;
+    border-bottom: 0
+}
+
+.has-dropdown:hover .cart-icon strong, .cart-icon:hover strong {
+    background-color: #446084;
+    color: #fff
+}
+
+.has-dropdown:hover .cart-icon strong:after, .cart-icon:hover strong:after {
+    height: 10px
+}
+
+.nav-small .cart-icon {
+    font-size: .66em
+}
+
+.nav-dark .cart-icon strong {
+    color: #fff;
+    border-color: #fff
+}
+
+.nav-dark .has-dropdown:hover .cart-icon strong, .nav-dark .cart-icon:hover strong {
+    background-color: #fff;
+    color: #446084
+}
+
+.nav-dark .cart-icon strong:after {
+    border-color: #fff
+}
+
+/* <------ Cart Animation */

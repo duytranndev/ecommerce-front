@@ -1,0 +1,83 @@
+.cate-small-product {
+  padding: 0 9.8px 19.6px;
+  max-width: 20%;
+  flex-basis: 20%;
+}
+
+.csp-col-inner {
+  position: relative;
+  width: 100%;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.boxes {
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.box-image > div > a {
+  display: block;
+}
+
+.price-wrapper .price {
+  display: block;
+}
+
+.title-wrapper {
+  padding-bottom: 10px;
+}
+
+.price .amount bdi,
+.price .amount span {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.box-image {
+  padding-top: 100%;
+  position: relative;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.box-image img {
+  max-width: 100%;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  position: absolute;
+  object-position: 50% 50%;
+  object-fit: cover;
+}
+
+.box-text {
+  padding-top: 0.7em;
+  padding-bottom: 1.4em;
+  position: relative;
+  width: 100%;
+  font-size: 0.9em;
+}
+
+.box-text p {
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+}
+
+p {
+  margin-bottom: 0em;
+}
+
+a {
+  color: #446084;
+}

@@ -1,0 +1,157 @@
+.header {
+  height: 48px;
+  max-width: 100%;
+  background-color: whitesmoke;
+  display: flex;
+  top: 0%;
+}
+
+.header-inner {
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+#logo img {
+  width: 200px;
+  max-height: 48px;
+  margin-left: 0;
+  margin-right: 30px;
+}
+
+.wrap-search {
+  margin-right: auto;
+  display: flex;
+  flex: 1 1;
+  position: relative;
+}
+
+.wrap-dropdown-cart-content {
+  min-width: 260px;
+}
+
+#search {
+  display: flex;
+  width: 95%;
+}
+
+.search-box {
+  width: 100%;
+}
+
+.search-box input {
+  height: 2.507em;
+  border: 1px solid #ddd;
+  padding: 0 0.75em;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.search-box input:focus {
+  box-shadow: 0 0 5px #ccc;
+  outline: none;
+}
+
+.search-box input::-webkit-input-placeholder {
+  font-size: 13px;
+  line-height: 3;
+}
+
+.wrap-action {
+  margin-left: auto;
+}
+
+#action {
+  display: flex;
+  align-items: center;
+}
+
+.search-button button {
+  height: 100%;
+  max-width: 100%;
+  border: 1px solid transparent;
+  letter-spacing: 0.03em;
+  font-size: 0.97em;
+  position: relative;
+  border-color: rgba(0, 0, 0, 0.05);
+  padding-left: 0.6em;
+  padding-right: 0.6em;
+  transition: transform 0.2s, border 0.2s, background 0.2s, box-shadow 0.2s, opacity 0.2s, color 0.2s;
+  background-color: #d26e4b;
+  color: white;
+}
+
+.search-button button:focus {
+  outline: none;
+}
+
+.search-button button i {
+  vertical-align: middle;
+  top: -1.5px;
+}
+
+.search-button button:hover {
+  box-shadow: inset 0 0 0 100px rgba(0, 0, 0, 0.2);
+}
+
+.divider {
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  height: 30px;
+  vertical-align: middle;
+  position: relative;
+  margin: 0 7.5px;
+}
+
+.cart a {
+  align-items: center;
+}
+
+.link-login-cart {
+  padding: 10px 0;
+  font-family: 'Lato', sans-serif;
+  color: rgba(102, 102, 102, 0.85);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 0.8em;
+  text-decoration: none;
+  margin: 0 7px;
+  display: flex;
+}
+
+.link-login-cart:hover {
+  color: black;
+}
+
+.link-login-cart:hover ~ .shopping-cart {
+  display: block;
+}
+
+.amount span {
+  font-size: 12px;
+  vertical-align: top;
+  margin-top: 0.05em;
+}
+
+.amount bdi {
+  font-size: 13px;
+}
+
+.amount {
+  font-size: 0;
+}
+
+a {
+  text-decoration: none;
+}
+.has-dropdown {
+  z-index: 9;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}

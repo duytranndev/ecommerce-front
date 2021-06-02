@@ -1,0 +1,15 @@
+
+.product-logo{
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.product-logo .listproduct-logo{
+    display: flex;
+}
+
+.list_product{
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+}

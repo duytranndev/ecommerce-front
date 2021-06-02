@@ -1,0 +1,128 @@
+.product_small {
+    background-color: white;
+    height: auto;
+    /* width: 176px; */
+    position: relative;
+    width: 16.5%;
+}
+
+.product_small:hover .product_small-like{
+    opacity: 1;
+    visibility: visible;
+}
+
+.product_small:hover .product_small-cart{
+    opacity: 1;
+    visibility: visible;
+}
+.product_small:hover .product_small-img>a>img{
+    transform: scale(1.1,1.1);
+}
+.product_small-img {
+    width: 100%;
+    /* height: 100%; */
+    overflow: hidden;
+}
+.product_small-img > a {
+    height: 100%;
+}
+.product_small-img > a > img {
+    height: 100%;
+    width: 100%;
+    transition: all ease-in 0.2s;
+}
+.product_small-text > a {
+    display: block;
+    font-size: 15px;
+    color: #334862;
+    text-decoration: none;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.product_small-link {
+    text-decoration: none;
+}
+.product_small-price {
+    color: black;
+    font-size: 16px;
+    font-weight: 550;
+}
+.product_small-like {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    border-radius: 50%;
+    color: #ccc;
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease-in 0.2s;
+
+}
+
+.product_small-like:hover {
+    color: white;
+    background-color: #dd0000;
+}
+
+.product_small-cart {
+    position: absolute;
+    top: 6px;
+    right: 42px;
+    border: 1px solid #ccc;
+    padding: 5px 8px;
+    border-radius: 100%;
+    color:#ccc;
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease-in 0.2s;
+}
+
+.product_small-cart:hover {
+    color: white;
+    background-color: green;
+}
+
+.icon-shop {
+    font-size: 20px;
+}
+
+.product_small-like:hover .product_small-desciption{
+    display: block;
+}
+
+.product_small-cart:hover .product_small-desciption{
+    display: block;
+}
+.product_small-desciption {
+    position: absolute;
+    top: 40px;
+    right: 6px;
+    width: 62px;
+    height: 46px;
+    background-color: black;
+    display: none;
+    border-radius: 6px;
+    transition: .2s;
+    padding: 6px;
+    z-index: 1;
+    box-sizing: border-box;
+    
+}
+.product_small-desciption ::after{
+    content: "";
+    position: absolute;
+    background-color:transparent;
+    width: 50px;
+    height: 12px;
+    top: -10px;
+    right: 0;
+}
+.product_small-desciption span {
+    display: block;
+    font-size: 12px;
+    color: white;
+}

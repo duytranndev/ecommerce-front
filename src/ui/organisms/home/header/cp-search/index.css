@@ -1,0 +1,78 @@
+.live-search-results {
+  width: 95%;
+  text-align: left;
+  color: #111;
+  top: 41px;
+  -webkit-box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  position: absolute;
+  font-size: 0.85em;
+}
+
+.z-top {
+  z-index: 9995;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.autocomplete-suggestions {
+  max-height: 80vh;
+}
+
+.autocomplete-suggestions {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  max-height: 50vh;
+  overflow-y: auto;
+}
+
+.autocomplete-suggestion {
+  padding: 10px 0.75em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: default;
+}
+
+.autocomplete-suggestion:hover,
+.active {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.autocomplete-suggestion img {
+  width: 40px;
+  border-radius: 99px;
+  height: 40px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.autocomplete-suggestion img + .search-name {
+  margin-top: -0.15em;
+  padding-left: 0.5em;
+}
+
+.autocomplete-suggestion .search-name {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.autocomplete-suggestion .search-price .amount bdi {
+  padding-top: 3px;
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+.autocomplete-suggestion .search-price .amount span {
+  font-size: 0.8em;
+}

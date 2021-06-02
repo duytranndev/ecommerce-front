@@ -1,0 +1,29 @@
+.notfound_page {
+    padding: 20px 150px 10px;
+    display: flex;
+    align-items: center;
+}
+.notfound_page div {
+    width: 60%;
+    margin: 0 auto;
+}
+.notfound_image {
+    width: 100%;
+}
+.notfound_backtohome {
+    padding: 10px 20px;
+    display: block;
+    border: none;
+    border-radius: 2px;
+    font-weight: 500;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: #446084;
+    text-align: center;
+}
+.notfound_backtohome:hover {
+    -webkit-box-shadow: inset 0 0 0 100px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0 0 100px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}

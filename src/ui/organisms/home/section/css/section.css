@@ -1,0 +1,38 @@
+.sectionn {
+    height: 41px;
+    background-color: rgb(241, 241, 241);
+}
+
+.wrap-sc-content {
+    height: 100%;
+    width: 100%;
+    padding: 8px 0px;
+}
+
+.sc-content {
+    height: 100%;
+    width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.sc-item {
+    height: 100%;
+    width: 100%;
+    padding: 0px 39px;
+    display: flex;
+    align-items: center
+}
+
+.sc-item img {
+    height: 13px;
+    width: 20px;
+}
+
+.sc-item span {
+    padding-left: 5px;
+    font-size: 90%;
+    font-family: "Lato", sans-serif;
+    color: #777;
+}

@@ -1,0 +1,1623 @@
+/* * {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.menu {
+  background-size: 100% 100%;
+  width: 100%;
+  height: 50px;
+  background-color: #d00;
+  z-index: 3;
+}
+
+.menu ul {
+  height: 100%;
+}
+
+.menu ul .khoi {
+  width: auto;
+  float: left;
+  height: 100%;
+  list-style-type: none;
+  padding: 15px 21px;
+  position: relative;
+  cursor: pointer;
+}
+
+.menu ul .khoi .tren {
+  height: 100%;
+}
+
+.menu ul .khoi .tren .title-dm {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.menu ul .khoi .tren .hot {
+  position: relative;
+}
+
+.menu ul .khoi .tren .hot::after {
+  content: 'HOT';
+  color: white;
+  font-weight: 400;
+  font-size: 13px;
+  padding: 2px;
+  margin-left: 5px;
+  position: absolute;
+  top: 0px !important;
+  background-color: #b40808;
+  border-radius: 3px;
+}
+
+.menu ul .khoi .duoi {
+  z-index: 2 !important;
+  width: auto;
+}
+
+.menu ul .khoi .duoi .khoiduoi .title {
+  color: black;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.menu ul .khoi .duoi .tamgiac {
+  width: 0;
+  height: 0;
+  border: 50px transparent solid;
+  border-bottom-color: blue;
+}
+
+.menu ul .khoi1 .tren i,
+.menu ul .khoi2 .tren i {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.menu ul .khoi1 .duoi .tamgiac,
+.menu ul .khoi2 .duoi .tamgiac {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.menu ul .khoi3 .duoi {
+  position: absolute;
+  left: -100%;
+  margin-top: 17px;
+  height: auto;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  width: 1400px;
+  opacity: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  visibility: hidden;
+  -webkit-box-shadow: 0px 1px 2px 1px #95a5a6;
+          box-shadow: 0px 1px 2px 1px #95a5a6;
+}
+
+.menu ul .khoi3 .duoi .khoiduoi {
+  z-index: 2;
+  padding: 10px 13px;
+}
+
+.menu ul .khoi3 .duoi .khoiduoi a {
+  display: block;
+  color: #a2a7aa;
+  text-decoration: none;
+  font-weight: 400;
+  padding-top: 15px;
+  display: block;
+  font-size: 16px;
+  text-align: left;
+  border-bottom: 1px solid #e6eaec;
+}
+
+.menu ul .khoi3 .duoi .khoiduoi a:hover {
+  color: black;
+}
+
+.menu ul .khoi3 .duoi .tamgiac {
+  border: 12px transparent solid;
+  border-bottom-color: white;
+  position: absolute;
+  top: -4%;
+  left: 14%;
+  z-index: 3;
+}
+
+.menu ul .khoi3 .khoiduoi1 {
+  width: 14% !important;
+  margin-left: 10px;
+}
+
+.menu ul .khoi3 .khoiduoi2 {
+  width: 13% !important;
+  margin-left: 0px;
+}
+
+.menu ul .khoi3 .khoiduoi3 {
+  width: 13% !important;
+  margin-left: 0px;
+}
+
+.menu ul .khoi3 .khoiduoi4 {
+  width: 17% !important;
+  margin-left: 15px;
+}
+
+.menu ul .khoi3 .khoiduoi5 {
+  width: 14% !important;
+  margin-left: 0px;
+}
+
+.menu ul .khoi3 .khoiduoi6 {
+  width: 15% !important;
+  margin-left: 0px;
+}
+
+.menu ul .khoi3 .khoiduoi7 {
+  width: 15% !important;
+  margin-left: 0px;
+}
+
+.menu ul .khoi3:hover .duoi {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menu ul .khoi4 {
+  margin-left: -25px !important;
+}
+
+.menu ul .khoi4 .duoi {
+  position: absolute;
+  left: -200%;
+  margin-top: 17px;
+  max-height: auto;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  width: 1350px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-box-shadow: 0px 1px 2px 1px #95a5a6;
+          box-shadow: 0px 1px 2px 1px #95a5a6;
+}
+
+.menu ul .khoi4 .duoi .khoiduoi {
+  z-index: 2;
+  padding: 10px 13px;
+}
+
+.menu ul .khoi4 .duoi .khoiduoi a {
+  display: block;
+  color: #a2a7aa;
+  text-decoration: none;
+  font-weight: 400;
+  padding: 15px;
+  display: block;
+  font-size: 16px;
+  text-align: left;
+  display: block;
+  border-bottom: 1px solid #e6eaec;
+}
+
+.menu ul .khoi4 .duoi .khoiduoi a:hover {
+  color: black;
+}
+
+.menu ul .khoi4 .duoi .tamgiac {
+  border: 12px transparent solid;
+  border-bottom-color: white;
+  position: absolute;
+  top: -2.9%;
+  left: 22%;
+  z-index: 3;
+}
+
+.menu ul .khoi4 .khoiduoi1 {
+  width: 23% !important;
+  margin-left: 10px;
+}
+
+.menu ul .khoi4 .khoiduoi2 {
+  width: 18% !important;
+  margin-left: 10px;
+}
+
+.menu ul .khoi4 .khoiduoi3 {
+  width: 18% !important;
+  margin-left: 10px;
+}
+
+.menu ul .khoi4 .khoiduoi4 {
+  width: 18% !important;
+  margin-left: 10px;
+}
+
+.menu ul .khoi4 .khoiduoi5 {
+  width: 21% !important;
+  margin-left: 10px;
+}
+
+.menu ul .khoi4:hover .duoi {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menu ul .khoi5 {
+  margin-left: -25px !important;
+}
+
+.menu ul .khoi5 .duoi {
+  position: absolute;
+  left: -140%;
+  margin-top: 17px;
+  max-height: auto;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  width: 1300px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-box-shadow: 0px 1px 2px 1px #95a5a6;
+          box-shadow: 0px 1px 2px 1px #95a5a6;
+}
+
+.menu ul .khoi5 .duoi .khoiduoi {
+  z-index: 2;
+  padding: 10px 13px;
+}
+
+.menu ul .khoi5 .duoi .khoiduoi a {
+  display: block;
+  color: #a2a7aa;
+  text-decoration: none;
+  font-weight: 400;
+  padding-top: 15px;
+  display: block;
+  font-size: 16px;
+  text-align: left;
+  border-bottom: 1px solid #e6eaec;
+}
+
+.menu ul .khoi5 .duoi .khoiduoi a:hover {
+  color: black;
+}
+
+.menu ul .khoi5 .duoi .tamgiac {
+  border: 12px transparent solid;
+  border-bottom-color: white;
+  position: absolute;
+  top: -4.4%;
+  left: 29%;
+  z-index: 3;
+}
+
+.menu ul .khoi5 .khoiduoi1 {
+  width: 14% !important;
+  margin-left: 10px;
+}
+
+.menu ul .khoi5 .khoiduoi2 {
+  width: 13% !important;
+  margin-left: 10px;
+}
+
+.menu ul .khoi5 .khoiduoi3 {
+  width: 16% !important;
+  margin-left: 10px;
+}
+
+.menu ul .khoi5 .khoiduoi4 {
+  width: 14% !important;
+  margin-left: 10px;
+}
+
+.menu ul .khoi5 .khoiduoi5 {
+  width: 13% !important;
+  margin-left: 10px;
+}
+
+.menu ul .khoi5 .khoiduoi6 {
+  width: 15% !important;
+  margin-left: 10px;
+}
+
+.menu ul .khoi5:hover .duoi {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menu ul .khoi6 {
+  margin-left: -25px !important;
+}
+
+.menu ul .khoi6 .duoi {
+  position: absolute;
+  left: -270%;
+  margin-top: 17px;
+  max-height: auto;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  width: 1300px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-box-shadow: 0px 1px 2px 1px #95a5a6;
+          box-shadow: 0px 1px 2px 1px #95a5a6;
+}
+
+.menu ul .khoi6 .duoi .khoiduoi {
+  z-index: 2;
+  padding: 10px 13px;
+}
+
+.menu ul .khoi6 .duoi .khoiduoi a {
+  display: block;
+  color: #a2a7aa;
+  text-decoration: none;
+  font-weight: 400;
+  padding-top: 15px;
+  display: block;
+  font-size: 16px;
+  text-align: left;
+  border-bottom: 1px solid #e6eaec;
+}
+
+.menu ul .khoi6 .duoi .khoiduoi a:hover {
+  color: black;
+}
+
+.menu ul .khoi6 .duoi .tamgiac {
+  border: 12px transparent solid;
+  border-bottom-color: white;
+  position: absolute;
+  top: -4.7%;
+  left: 40%;
+  z-index: 3;
+}
+
+.menu ul .khoi6 .khoiduoi1 {
+  width: 17% !important;
+  margin-left: 10px;
+}
+
+.menu ul .khoi6 .khoiduoi2 {
+  width: 13% !important;
+  margin-left: 0px;
+}
+
+.menu ul .khoi6 .khoiduoi3 {
+  width: 13% !important;
+  margin-left: 0px;
+}
+
+.menu ul .khoi6 .khoiduoi4 {
+  width: 15% !important;
+  margin-left: 0px;
+}
+
+.menu ul .khoi6 .khoiduoi5 {
+  width: 14% !important;
+  margin-left: 0px;
+}
+
+.menu ul .khoi6 .khoiduoi6 {
+  width: 19% !important;
+  margin-left: 0px;
+}
+
+.menu ul .khoi6:hover .duoi {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menu ul .khoi7 {
+  margin-left: -25px !important;
+}
+
+.menu ul .khoi7 .duoi {
+  position: absolute;
+  left: -230%;
+  margin-top: 17px;
+  max-height: auto;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  width: 850px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-box-shadow: 0px 1px 2px 1px #95a5a6;
+          box-shadow: 0px 1px 2px 1px #95a5a6;
+}
+
+.menu ul .khoi7 .duoi .khoiduoi {
+  z-index: 2;
+  padding: 10px 13px;
+}
+
+.menu ul .khoi7 .duoi .khoiduoi a {
+  display: block;
+  color: #a2a7aa;
+  text-decoration: none;
+  font-weight: 400;
+  padding-top: 15px;
+  display: block;
+  font-size: 16px;
+  text-align: left;
+  border-bottom: 1px solid #e6eaec;
+}
+
+.menu ul .khoi7 .duoi .khoiduoi a:hover {
+  color: black;
+}
+
+.menu ul .khoi7 .duoi .tamgiac {
+  border: 12px transparent solid;
+  border-bottom-color: white;
+  position: absolute;
+  top: -4.7%;
+  left: 58%;
+  z-index: 3;
+}
+
+.menu ul .khoi7 .khoiduoi1 {
+  width: 17% !important;
+  margin-left: 10px;
+}
+
+.menu ul .khoi7 .khoiduoi2 {
+  width: 20% !important;
+  margin-left: 0px;
+}
+
+.menu ul .khoi7 .khoiduoi3 {
+  width: 25% !important;
+  margin-left: 0px;
+}
+
+.menu ul .khoi7 .khoiduoi4 {
+  width: 22% !important;
+  margin-left: 0px;
+}
+
+.menu ul .khoi7:hover .duoi {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menu ul .khoi8 {
+  margin-left: -25px !important;
+}
+
+.menu ul .khoi8 .duoi {
+  position: absolute;
+  left: -230%;
+  margin-top: 17px;
+  max-height: auto;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  width: 800px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-box-shadow: 0px 1px 2px 1px #95a5a6;
+          box-shadow: 0px 1px 2px 1px #95a5a6;
+}
+
+.menu ul .khoi8 .duoi .khoiduoi {
+  z-index: 2;
+  padding: 10px 13px;
+}
+
+.menu ul .khoi8 .duoi .khoiduoi a {
+  display: block;
+  color: #a2a7aa;
+  text-decoration: none;
+  font-weight: 400;
+  padding-top: 15px;
+  display: block;
+  font-size: 16px;
+  text-align: left;
+  border-bottom: 1px solid #e6eaec;
+}
+
+.menu ul .khoi8 .duoi .khoiduoi a:hover {
+  color: black;
+}
+
+.menu ul .khoi8 .duoi .tamgiac {
+  border: 12px transparent solid;
+  border-bottom-color: white;
+  position: absolute;
+  top: -5%;
+  left: 54%;
+  z-index: 3;
+}
+
+.menu ul .khoi8 .khoiduoi1 {
+  width: 25% !important;
+  margin-left: 10px;
+}
+
+.menu ul .khoi8 .khoiduoi2 {
+  width: 22% !important;
+  margin-left: 0px;
+}
+
+.menu ul .khoi8 .khoiduoi3 {
+  width: 23% !important;
+  margin-left: 0px;
+}
+
+.menu ul .khoi8 .khoiduoi4 {
+  width: 22% !important;
+  margin-left: 0px;
+}
+
+.menu ul .khoi8:hover .duoi {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menu ul .khoi9 {
+  margin-left: -25px !important;
+}
+
+.menu ul .khoi9 .duoi {
+  position: absolute;
+  left: -330%;
+  margin-top: 17px;
+  max-height: auto;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  width: 900px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-box-shadow: 0px 1px 2px 1px #95a5a6;
+          box-shadow: 0px 1px 2px 1px #95a5a6;
+}
+
+.menu ul .khoi9 .duoi .khoiduoi {
+  z-index: 2;
+  padding: 10px 13px;
+}
+
+.menu ul .khoi9 .duoi .khoiduoi a {
+  display: block;
+  color: #a2a7aa;
+  text-decoration: none;
+  font-weight: 400;
+  padding-top: 15px;
+  display: block;
+  font-size: 16px;
+  text-align: left;
+  border-bottom: 1px solid #e6eaec;
+}
+
+.menu ul .khoi9 .duoi .khoiduoi a:hover {
+  color: black;
+}
+
+.menu ul .khoi9 .duoi .tamgiac {
+  border: 12px transparent solid;
+  border-bottom-color: white;
+  position: absolute;
+  top: -7%;
+  left: 68%;
+  z-index: 3;
+}
+
+.menu ul .khoi9 .khoiduoi1 {
+  width: 24% !important;
+  margin-left: 10px;
+}
+
+.menu ul .khoi9 .khoiduoi2 {
+  width: 24% !important;
+  margin-left: 0px;
+}
+
+.menu ul .khoi9 .khoiduoi3 {
+  width: 28% !important;
+  margin-left: 0px;
+}
+
+.menu ul .khoi9 .khoiduoi4 {
+  width: 23% !important;
+  margin-left: 0px;
+}
+
+.menu ul .khoi9:hover .duoi {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menu ul .khoi10 {
+  margin-left: -25px !important;
+}
+
+.menu ul .khoi10 .tren .hot {
+  position: relative;
+}
+
+.menu ul .khoi10 .tren .hot::after {
+  content: 'HOT';
+  color: white;
+  font-weight: 400;
+  font-size: 13px;
+  padding: 2px;
+  margin-left: 20px;
+  position: absolute;
+  top: 10px;
+  background-color: #be0707;
+  border-radius: 3px;
+}
+
+.menu ul .khoi10 .duoi {
+  position: absolute;
+  left: -30%;
+  margin-top: 17px;
+  max-height: auto;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  width: 280px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-box-shadow: 0px 1px 2px 1px #95a5a6;
+          box-shadow: 0px 1px 2px 1px #95a5a6;
+}
+
+.menu ul .khoi10 .duoi .khoiduoi {
+  z-index: 2;
+  padding: 10px 13px;
+}
+
+.menu ul .khoi10 .duoi .khoiduoi a {
+  display: block;
+  color: #a2a7aa;
+  text-decoration: none;
+  font-weight: 400;
+  padding-top: 15px;
+  display: block;
+  font-size: 16px;
+  text-align: left;
+  border-bottom: 1px solid #e6eaec;
+}
+
+.menu ul .khoi10 .duoi .khoiduoi a:hover {
+  color: black;
+}
+
+.menu ul .khoi10 .duoi .tamgiac {
+  border: 12px transparent solid;
+  border-bottom-color: white;
+  position: absolute;
+  top: -6%;
+  left: 45%;
+  z-index: 3;
+}
+
+.menu ul .khoi10 .khoiduoi1 {
+  width: 100% !important;
+  margin-left: 10px;
+}
+
+.menu ul .khoi10:hover .duoi {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menu ul .hot {
+  position: relative;
+}
+
+.menu ul .hot::after {
+  content: 'HOT';
+  color: white;
+  font-weight: 400;
+  font-size: 13px;
+  padding: 2px;
+  margin-left: 10px;
+  position: absolute;
+  top: 10px;
+  background-color: #be0707;
+  border-radius: 3px;
+}
+
+.menu ul .new {
+  position: relative;
+}
+
+.menu ul .new::after {
+  content: 'NEW';
+  color: white;
+  font-weight: 400;
+  font-size: 13px;
+  padding: 2px;
+  margin-left: 10px;
+  position: absolute;
+  top: 10px;
+  background-color: #1e3799;
+  border-radius: 3px;
+}
+
+.menu ul i {
+  color: #ecf0f1;
+  padding-left: 3px;
+} */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.menu {
+  background-size: 100% 100%;
+  width: 100%;
+  height: 50px;
+  background-color: #d00;
+  z-index: 3;
+}
+
+.menu ul {
+  height: 100%;
+}
+
+.menu ul .khoi {
+  width: auto;
+  float: left;
+  height: 100%;
+  list-style-type: none;
+  padding: 15px 16px;
+  position: relative;
+  cursor: pointer;
+}
+
+.menu ul .khoi .tren {
+  height: 100%;
+}
+
+.menu ul .khoi .tren .title-dm {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.menu ul .khoi .tren .hot {
+  position: relative;
+}
+
+.menu ul .khoi .tren .hot::after {
+  content: "HOT";
+  color: white;
+  font-weight: 400;
+  font-size: 13px;
+  padding: 2px;
+  margin-left: 5px;
+  position: absolute;
+  top: 0px !important;
+  background-color: #b40808;
+  border-radius: 3px;
+}
+
+.menu ul .khoi .duoi {
+  z-index: 2 !important;
+  width: auto;
+}
+
+.menu ul .khoi .duoi .khoiduoi .title {
+  color: black;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.menu ul .khoi .duoi .tamgiac {
+  width: 0;
+  height: 0;
+  border: 50px transparent solid;
+  border-bottom-color: blue;
+}
+
+.menu ul .khoi1 .tren i,
+.menu ul .khoi2 .tren i {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.menu ul .khoi1 .duoi .tamgiac,
+.menu ul .khoi2 .duoi .tamgiac {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.menu ul .khoi3 .duoi {
+  position: absolute;
+  left: -100%;
+  margin-top: 17px;
+  height: auto;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  width: 1400px;
+  opacity: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  visibility: hidden;
+  -webkit-box-shadow: 0px 1px 2px 1px #95a5a6;
+  box-shadow: 0px 1px 2px 1px #95a5a6;
+}
+
+.menu ul .khoi3 .duoi .khoiduoi {
+  z-index: 2;
+  padding: 10px 13px;
+}
+
+.menu ul .khoi3 .duoi .khoiduoi a {
+  display: block;
+  color: #a2a7aa;
+  text-decoration: none;
+  font-weight: 400;
+  padding-top: 15px;
+  display: block;
+  font-size: 16px;
+  text-align: left;
+  border-bottom: 1px solid #e6eaec;
+}
+
+.menu ul .khoi3 .duoi .khoiduoi a:hover {
+  color: black;
+}
+
+.menu ul .khoi3 .duoi .tamgiac {
+  border: 12px transparent solid;
+  border-bottom-color: white;
+  position: absolute;
+  top: -4%;
+  left: 14%;
+  z-index: 3;
+}
+
+.menu ul .khoi3 .khoiduoi1 {
+  width: 14% !important;
+  margin-left: 10px;
+}
+
+.menu ul .khoi3 .khoiduoi2 {
+  width: 13% !important;
+  margin-left: 0px;
+}
+
+.menu ul .khoi3 .khoiduoi3 {
+  width: 13% !important;
+  margin-left: 0px;
+}
+
+.menu ul .khoi3 .khoiduoi4 {
+  width: 17% !important;
+  margin-left: 15px;
+}
+
+.menu ul .khoi3 .khoiduoi5 {
+  width: 14% !important;
+  margin-left: 0px;
+}
+
+.menu ul .khoi3 .khoiduoi6 {
+  width: 15% !important;
+  margin-left: 0px;
+}
+
+.menu ul .khoi3 .khoiduoi7 {
+  width: 15% !important;
+  margin-left: 0px;
+}
+
+.menu ul .khoi3:hover .duoi {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menu ul .khoi4 {
+  margin-left: -25px !important;
+}
+
+.menu ul .khoi4 .duoi {
+  position: absolute;
+  left: -200%;
+  margin-top: 17px;
+  max-height: auto;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  width: 1350px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-box-shadow: 0px 1px 2px 1px #95a5a6;
+  box-shadow: 0px 1px 2px 1px #95a5a6;
+}
+
+.menu ul .khoi4 .duoi .khoiduoi {
+  z-index: 2;
+  padding: 10px 13px;
+}
+
+.menu ul .khoi4 .duoi .khoiduoi a {
+  display: block;
+  color: #a2a7aa;
+  text-decoration: none;
+  font-weight: 400;
+  padding: 15px;
+  display: block;
+  font-size: 16px;
+  text-align: left;
+  display: block;
+  border-bottom: 1px solid #e6eaec;
+}
+
+.menu ul .khoi4 .duoi .khoiduoi a:hover {
+  color: black;
+}
+
+.menu ul .khoi4 .duoi .tamgiac {
+  border: 12px transparent solid;
+  border-bottom-color: white;
+  position: absolute;
+  top: -2.9%;
+  left: 22%;
+  z-index: 3;
+}
+
+.menu ul .khoi4 .khoiduoi1 {
+  width: 23% !important;
+  margin-left: 10px;
+}
+
+.menu ul .khoi4 .khoiduoi2 {
+  width: 18% !important;
+  margin-left: 10px;
+}
+
+.menu ul .khoi4 .khoiduoi3 {
+  width: 18% !important;
+  margin-left: 10px;
+}
+
+.menu ul .khoi4 .khoiduoi4 {
+  width: 18% !important;
+  margin-left: 10px;
+}
+
+.menu ul .khoi4 .khoiduoi5 {
+  width: 21% !important;
+  margin-left: 10px;
+}
+
+.menu ul .khoi4:hover .duoi {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menu ul .khoi5 {
+  margin-left: -25px !important;
+}
+
+.menu ul .khoi5 .duoi {
+  position: absolute;
+  left: -140%;
+  margin-top: 17px;
+  max-height: auto;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  width: 1300px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-box-shadow: 0px 1px 2px 1px #95a5a6;
+  box-shadow: 0px 1px 2px 1px #95a5a6;
+}
+
+.menu ul .khoi5 .duoi .khoiduoi {
+  z-index: 2;
+  padding: 10px 13px;
+}
+
+.menu ul .khoi5 .duoi .khoiduoi a {
+  display: block;
+  color: #a2a7aa;
+  text-decoration: none;
+  font-weight: 400;
+  padding-top: 15px;
+  display: block;
+  font-size: 16px;
+  text-align: left;
+  border-bottom: 1px solid #e6eaec;
+}
+
+.menu ul .khoi5 .duoi .khoiduoi a:hover {
+  color: black;
+}
+
+.menu ul .khoi5 .duoi .tamgiac {
+  border: 12px transparent solid;
+  border-bottom-color: white;
+  position: absolute;
+  top: -4.4%;
+  left: 29%;
+  z-index: 3;
+}
+
+.menu ul .khoi5 .khoiduoi1 {
+  width: 14% !important;
+  margin-left: 10px;
+}
+
+.menu ul .khoi5 .khoiduoi2 {
+  width: 13% !important;
+  margin-left: 10px;
+}
+
+.menu ul .khoi5 .khoiduoi3 {
+  width: 16% !important;
+  margin-left: 10px;
+}
+
+.menu ul .khoi5 .khoiduoi4 {
+  width: 14% !important;
+  margin-left: 10px;
+}
+
+.menu ul .khoi5 .khoiduoi5 {
+  width: 13% !important;
+  margin-left: 10px;
+}
+
+.menu ul .khoi5 .khoiduoi6 {
+  width: 15% !important;
+  margin-left: 10px;
+}
+
+.menu ul .khoi5:hover .duoi {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menu ul .khoi6 {
+  margin-left: -25px !important;
+}
+
+.menu ul .khoi6 .duoi {
+  position: absolute;
+  left: -270%;
+  margin-top: 17px;
+  max-height: auto;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  width: 1300px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-box-shadow: 0px 1px 2px 1px #95a5a6;
+  box-shadow: 0px 1px 2px 1px #95a5a6;
+}
+
+.menu ul .khoi6 .duoi .khoiduoi {
+  z-index: 2;
+  padding: 10px 13px;
+}
+
+.menu ul .khoi6 .duoi .khoiduoi a {
+  display: block;
+  color: #a2a7aa;
+  text-decoration: none;
+  font-weight: 400;
+  padding-top: 15px;
+  display: block;
+  font-size: 16px;
+  text-align: left;
+  border-bottom: 1px solid #e6eaec;
+}
+
+.menu ul .khoi6 .duoi .khoiduoi a:hover {
+  color: black;
+}
+
+.menu ul .khoi6 .duoi .tamgiac {
+  border: 12px transparent solid;
+  border-bottom-color: white;
+  position: absolute;
+  top: -4.7%;
+  left: 40%;
+  z-index: 3;
+}
+
+.menu ul .khoi6 .khoiduoi1 {
+  width: 17% !important;
+  margin-left: 10px;
+}
+
+.menu ul .khoi6 .khoiduoi2 {
+  width: 13% !important;
+  margin-left: 0px;
+}
+
+.menu ul .khoi6 .khoiduoi3 {
+  width: 13% !important;
+  margin-left: 0px;
+}
+
+.menu ul .khoi6 .khoiduoi4 {
+  width: 15% !important;
+  margin-left: 0px;
+}
+
+.menu ul .khoi6 .khoiduoi5 {
+  width: 14% !important;
+  margin-left: 0px;
+}
+
+.menu ul .khoi6 .khoiduoi6 {
+  width: 19% !important;
+  margin-left: 0px;
+}
+
+.menu ul .khoi6:hover .duoi {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menu ul .khoi7 {
+  margin-left: -25px !important;
+}
+
+.menu ul .khoi7 .duoi {
+  position: absolute;
+  left: -230%;
+  margin-top: 17px;
+  max-height: auto;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  width: 850px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-box-shadow: 0px 1px 2px 1px #95a5a6;
+  box-shadow: 0px 1px 2px 1px #95a5a6;
+}
+
+.menu ul .khoi7 .duoi .khoiduoi {
+  z-index: 2;
+  padding: 10px 13px;
+}
+
+.menu ul .khoi7 .duoi .khoiduoi a {
+  display: block;
+  color: #a2a7aa;
+  text-decoration: none;
+  font-weight: 400;
+  padding-top: 15px;
+  display: block;
+  font-size: 16px;
+  text-align: left;
+  border-bottom: 1px solid #e6eaec;
+}
+
+.menu ul .khoi7 .duoi .khoiduoi a:hover {
+  color: black;
+}
+
+.menu ul .khoi7 .duoi .tamgiac {
+  border: 12px transparent solid;
+  border-bottom-color: white;
+  position: absolute;
+  top: -4.7%;
+  left: 58%;
+  z-index: 3;
+}
+
+.menu ul .khoi7 .khoiduoi1 {
+  width: 17% !important;
+  margin-left: 10px;
+}
+
+.menu ul .khoi7 .khoiduoi2 {
+  width: 20% !important;
+  margin-left: 0px;
+}
+
+.menu ul .khoi7 .khoiduoi3 {
+  width: 25% !important;
+  margin-left: 0px;
+}
+
+.menu ul .khoi7 .khoiduoi4 {
+  width: 22% !important;
+  margin-left: 0px;
+}
+
+.menu ul .khoi7:hover .duoi {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menu ul .khoi8 {
+  margin-left: -25px !important;
+}
+
+.menu ul .khoi8 .duoi {
+  position: absolute;
+  left: -230%;
+  margin-top: 17px;
+  max-height: auto;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  width: 800px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-box-shadow: 0px 1px 2px 1px #95a5a6;
+  box-shadow: 0px 1px 2px 1px #95a5a6;
+}
+
+.menu ul .khoi8 .duoi .khoiduoi {
+  z-index: 2;
+  padding: 10px 13px;
+}
+
+.menu ul .khoi8 .duoi .khoiduoi a {
+  display: block;
+  color: #a2a7aa;
+  text-decoration: none;
+  font-weight: 400;
+  padding-top: 15px;
+  display: block;
+  font-size: 16px;
+  text-align: left;
+  border-bottom: 1px solid #e6eaec;
+}
+
+.menu ul .khoi8 .duoi .khoiduoi a:hover {
+  color: black;
+}
+
+.menu ul .khoi8 .duoi .tamgiac {
+  border: 12px transparent solid;
+  border-bottom-color: white;
+  position: absolute;
+  top: -5%;
+  left: 54%;
+  z-index: 3;
+}
+
+.menu ul .khoi8 .khoiduoi1 {
+  width: 25% !important;
+  margin-left: 10px;
+}
+
+.menu ul .khoi8 .khoiduoi2 {
+  width: 22% !important;
+  margin-left: 0px;
+}
+
+.menu ul .khoi8 .khoiduoi3 {
+  width: 23% !important;
+  margin-left: 0px;
+}
+
+.menu ul .khoi8 .khoiduoi4 {
+  width: 22% !important;
+  margin-left: 0px;
+}
+
+.menu ul .khoi8:hover .duoi {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menu ul .khoi9 {
+  margin-left: -25px !important;
+}
+
+.menu ul .khoi9 .duoi {
+  position: absolute;
+  left: -330%;
+  margin-top: 17px;
+  max-height: auto;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  width: 900px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-box-shadow: 0px 1px 2px 1px #95a5a6;
+  box-shadow: 0px 1px 2px 1px #95a5a6;
+}
+
+.menu ul .khoi9 .duoi .khoiduoi {
+  z-index: 2;
+  padding: 10px 13px;
+}
+
+.menu ul .khoi9 .duoi .khoiduoi a {
+  display: block;
+  color: #a2a7aa;
+  text-decoration: none;
+  font-weight: 400;
+  padding-top: 15px;
+  display: block;
+  font-size: 16px;
+  text-align: left;
+  border-bottom: 1px solid #e6eaec;
+}
+
+.menu ul .khoi9 .duoi .khoiduoi a:hover {
+  color: black;
+}
+
+.menu ul .khoi9 .duoi .tamgiac {
+  border: 12px transparent solid;
+  border-bottom-color: white;
+  position: absolute;
+  top: -7%;
+  left: 68%;
+  z-index: 3;
+}
+
+.menu ul .khoi9 .khoiduoi1 {
+  width: 24% !important;
+  margin-left: 10px;
+}
+
+.menu ul .khoi9 .khoiduoi2 {
+  width: 24% !important;
+  margin-left: 0px;
+}
+
+.menu ul .khoi9 .khoiduoi3 {
+  width: 28% !important;
+  margin-left: 0px;
+}
+
+.menu ul .khoi9 .khoiduoi4 {
+  width: 23% !important;
+  margin-left: 0px;
+}
+
+.menu ul .khoi9:hover .duoi {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menu ul .khoi10 {
+  margin-left: -25px !important;
+}
+
+.menu ul .khoi10 .tren .hot {
+  position: relative;
+}
+
+.menu ul .khoi10 .tren .hot::after {
+  content: "HOT";
+  color: white;
+  font-weight: 400;
+  font-size: 13px;
+  padding: 2px;
+  margin-left: 20px;
+  position: absolute;
+  top: 10px;
+  background-color: #be0707;
+  border-radius: 3px;
+}
+
+.menu ul .khoi10 .duoi {
+  position: absolute;
+  left: -30%;
+  margin-top: 17px;
+  max-height: auto;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  width: 280px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-box-shadow: 0px 1px 2px 1px #95a5a6;
+  box-shadow: 0px 1px 2px 1px #95a5a6;
+}
+
+.menu ul .khoi10 .duoi .khoiduoi {
+  z-index: 2;
+  padding: 10px 13px;
+}
+
+.menu ul .khoi10 .duoi .khoiduoi a {
+  display: block;
+  color: #a2a7aa;
+  text-decoration: none;
+  font-weight: 400;
+  padding-top: 15px;
+  display: block;
+  font-size: 16px;
+  text-align: left;
+  border-bottom: 1px solid #e6eaec;
+}
+
+.menu ul .khoi10 .duoi .khoiduoi a:hover {
+  color: black;
+}
+
+.menu ul .khoi10 .duoi .tamgiac {
+  border: 12px transparent solid;
+  border-bottom-color: white;
+  position: absolute;
+  top: -6%;
+  left: 45%;
+  z-index: 3;
+}
+
+.menu ul .khoi10 .khoiduoi1 {
+  width: 100% !important;
+  margin-left: 10px;
+}
+
+.menu ul .khoi10:hover .duoi {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menu ul .hot {
+  position: relative;
+}
+
+.menu ul .hot::after {
+  content: "HOT";
+  color: white;
+  font-weight: 400;
+  font-size: 13px;
+  padding: 2px;
+  margin-left: 10px;
+  position: absolute;
+  top: 10px;
+  background-color: #be0707;
+  border-radius: 3px;
+}
+
+.menu ul .new {
+  position: relative;
+}
+
+.menu ul .new::after {
+  content: "NEW";
+  color: white;
+  font-weight: 400;
+  font-size: 13px;
+  padding: 2px;
+  margin-left: 10px;
+  position: absolute;
+  top: 10px;
+  background-color: #1e3799;
+  border-radius: 3px;
+}
+
+.menu ul i {
+  color: #ecf0f1;
+  padding-left: 3px;
+}
+/*# sourceMappingURL=menu.css.map */

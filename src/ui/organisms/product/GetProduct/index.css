@@ -1,0 +1,44 @@
+/* Animation */
+
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 70px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 1;
+    animation-delay: 1s;
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 70px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 1;
+    animation-delay: 1s;
+  }
+}
+
+.animated {
+  will-change: filter, transform, opacity;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  transition: filter 1.3s, transform 1.6s, opacity 0.7s ease-in, -webkit-filter 1.3s, -webkit-transform 1.6s;
+}
+
+.animatedFadeInUp {
+  opacity: 0;
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}

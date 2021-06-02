@@ -1,0 +1,78 @@
+.banner-add {
+  width: 100%;
+  height: 70px;
+  border-top: 2px black solid;
+  padding-top: 10px;
+  background-color: rgb(245, 245, 245);
+  position: fixed;
+  bottom: 0;
+  z-index: 4;
+  .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    .block {
+      height: 100%;
+      padding: 0px 0px;
+      margin: 0;
+    }
+    .block-image {
+      height: 50px;
+      width: 70px;
+      padding-bottom: 5px;
+      .img-data {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .block-name {
+      height: 100%;
+      width: 250px;
+      margin-left: 50px;
+    }
+    .block-price {
+      height: 100%;
+      margin-left: 50px;
+      padding-right: 20px;
+      margin-top: 10px;
+    }
+    .block-point {
+      margin-left: 50px;
+      margin-top: 10px;
+    }
+    .block-buttons {
+      margin-left: 50px;
+      .button-input {
+        display: flex;
+        margin-right: 10px;
+        .button {
+          width: 60px;
+          height: 40px;
+          margin: 5px 5px !important;
+        }
+        .input-value {
+          z-index: 3;
+          color: red;
+          margin: 7px 5px;
+          width: 60px;
+        }
+      }
+      .buttons {
+        display: flex;
+        .button-add {
+          height: 50px;
+          width: 200px;
+          background-color: crimson;
+        }
+        button {
+          padding: 0 !important;
+          margin: 0 !important;
+          background-color: rgb(187, 184, 184);
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+}

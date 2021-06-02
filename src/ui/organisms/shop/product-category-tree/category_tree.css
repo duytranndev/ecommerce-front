@@ -1,0 +1,235 @@
+.category-page-row {
+  padding-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  /* max-width: 1080px; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.col {
+  position: relative;
+  margin: 0;
+  padding: 0 15px 30px;
+  width: 100%;
+}
+
+.category-tree-wrap {
+  margin-bottom: 1.5em;
+}
+
+span.widget-title {
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #777;
+}
+
+.divider-small {
+  margin-top: 0.66em;
+  height: 3px;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 1em 0 1em;
+  width: 100%;
+  max-width: 30px;
+}
+
+.product-category {
+  margin: 0;
+}
+
+.cat-item {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
+}
+
+.cat-item a {
+  display: inline-block;
+  padding: 6px 0;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  color: #334890;
+}
+
+.count {
+  opacity: 0.5;
+  font-size: 0.7em;
+  line-height: 3em;
+}
+
+.category-tree {
+  max-width: 25%;
+  flex-basis: 25%;
+}
+
+.toggle,
+.toggle:focus {
+  width: 1em;
+  min-height: 1em;
+  margin: 0 0 0 5px;
+  height: auto;
+  line-height: 1;
+  box-shadow: none !important;
+  padding: 0;
+  color: currentColor;
+  opacity: 0.6;
+  position: relative;
+  display: inline-block;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 0.97em;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  font-weight: bolder;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid transparent;
+  vertical-align: middle;
+  border-radius: 0;
+  outline: none;
+}
+
+.cate-description p {
+  margin-bottom: 1.3em;
+}
+
+.toggle i {
+  font-size: 0.8em;
+}
+
+.toggle {
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+}
+
+.toggle:active {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(-180deg);
+}
+
+.test:active .rotate {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+}
+
+.category-children,
+.category-grand-children {
+  display: block;
+  border-left: 1px solid #ddd;
+  margin: 0 0 10px 3px;
+  padding-left: 15px;
+  width: 100%;
+}
+
+.category-children .cat-item {
+  border: 0;
+}
+
+.category-children .cat-item a {
+  font-size: 0.9em;
+  padding: 3px 0;
+}
+
+.list-c-view {
+  max-width: 75%;
+  flex-basis: 75%;
+}
+
+.list-cate {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.price-slider-amount .button {
+  border-radius: 99px;
+  background-color: #666;
+  float: left;
+  font-size: 0.85em;
+  color: #fff;
+}
+
+.price-slider-amount {
+  text-align: right;
+  line-height: 1;
+  font-size: 0.8751em;
+  padding-top: 10px;
+}
+
+.price-slider-amount span {
+  font-weight: bold;
+}
+
+.category-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 60px;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.is-small {
+  font-size: 0.8em;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.breadcum-upper {
+  font-weight: bold;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.breadcum-upper a {
+  font-weight: normal;
+}
+
+.breadcum-upper .dividers {
+  position: relative;
+  top: -2px;
+  opacity: 0.35;
+  margin: 0 0.3em;
+  font-weight: 500;
+}
+.select-box {
+  max-height: 100%;
+}
+.select-box-wrapper {
+  margin: 5px 0;
+  display: inline-block;
+}
+
+.select-box-wrapper select {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  border-color: lightgray;
+  border-radius: 99px;
+  height: 2.507em;
+  padding: 0 0.75em;
+  font-size: 0.97em;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+*:focus {
+  outline: 0;
+}

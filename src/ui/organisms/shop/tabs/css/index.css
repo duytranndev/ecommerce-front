@@ -1,0 +1,97 @@
+.tab-container {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+}
+
+.tab-container .tab-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 24px;
+  font-weight: 500;
+  border-bottom: 1px black solid;
+  cursor: pointer;
+}
+
+.tab-container .tab-title .tab-title-item {
+  padding: 10px 10px;
+}
+
+.tab-container .tab-content {
+  padding: 5px 10px;
+}
+
+.tab-container .tab-content .tab-content-item {
+  display: none;
+}
+
+.tab-container .tab-content .tab-content-item .title {
+  padding-top: 10px;
+}
+
+.tab-container .tab-content .tab-content-item .title,
+.tab-container .tab-content .tab-content-item .name {
+  font-weight: 500;
+  font-size: 28px;
+}
+
+.tab-container .tab-content .tab-content-item .container-describe .price {
+  font-size: 18px;
+  font-weight: 550;
+}
+
+.tab-container .tab-content .tab-content-item .container-describe .about {
+  font-size: 16px;
+}
+
+.tab-container .tab-content .tab-content-item .container-describe .other {
+  color: red;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.tab-container .tab-content .tab-content-item .container-describe .dark {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.tab-container .tab-content .tab-content-item .container-describe .image {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tab-container .tab-content .tab-content-item .container-describe .container-image .block-image .image-banner {
+  width: 100%;
+  padding: 7px 0px;
+  background-color: #f2f2f2;
+  text-align: center;
+  font-style: italic;
+}
+
+.tab-container .tab-content .tab-content-item .container-describe .container-image .block-image .banner-1,
+.tab-container .tab-content .tab-content-item .container-describe .container-image .block-image .banner-2,
+.tab-container .tab-content .tab-content-item .container-describe .container-image .block-image .banner-3 {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.tab-container .tab-content .tab-content-item .container-describe .container-image .block-image.small {
+  width: 50%;
+  height: 60%;
+  float: left;
+}
+
+.tab-container .tab-content .tab-content-item .container-describe .box-contact {
+  padding-top: 18px;
+}
+
+.tab-container .tab-content .tab-content-item .container-describe .box-contact h6 {
+  font-size: 18px;
+  color: #eb2f2f;
+}
+
+.tab-container .tab-content .tab-content-item.tab-content-selected {
+  display: block;
+}
+/*# sourceMappingURL=index.css.map */

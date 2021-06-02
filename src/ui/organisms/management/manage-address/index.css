@@ -1,0 +1,97 @@
+/* .manage-address {
+}
+.manage-address_wrap {
+}
+.manage-address_label {
+}
+.manage-address_payment {
+} */
+.manage-address_payment .manage-address_heading {
+    font-size: 24px;
+    margin-top: 14px;
+    color: #555;
+    margin-bottom: 4px;
+}
+/* .manage-address_current {
+} */
+.manage-address_current span,
+.manage-address_new span {
+    display: block;
+}
+/* .manage-address_update {
+} */
+.manage-address_change {
+    font-size: 16px;
+    color: rgb(83, 111, 175);
+    font-weight: 400;
+}
+.manage-address_change:hover {
+    cursor: pointer;
+    font-weight: 500;
+}
+.test-btn {
+    padding: 20px 20px;
+    background-color: yellowgreen;
+}
+.manage-address_form-wrap {
+    padding: 0 10px;
+}
+/* .manage-address-form {
+}
+.manage-address_info-user {
+} */
+.manage-address-group {
+    width: 48%;
+}
+.max_width {
+    width: 100%;
+}
+.group_btn-save {
+    display: flex;
+    justify-content: center;
+}
+.manage-address-wrapper--group {
+    display: flex;
+    justify-content: space-between;
+}
+.manage-address-label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    font-weight: 600;
+    font-size: 14px;
+}
+.manage-address-input {
+    width: 100%;
+    height: 40px;
+    padding: 0 12px;
+    font-size: 14px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    outline: none;
+    box-shadow: inset 0 1px 2px rgb(0 0 0 / 10%);
+}
+.manage-address-input:focus {
+    box-shadow: 0 0 5px #ccc;
+}
+.manage-address-btn {
+    display: block;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 2px;
+    font-weight: 500;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: #446084;
+    margin: 8px 0;
+}
+.has-error {
+    display: block;
+    margin-top: 4px;
+    margin-left: 4px;
+    color: #d60000;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 500;
+}
